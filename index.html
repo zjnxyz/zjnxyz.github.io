@@ -1,1 +1,372 @@
-hello github.io
+
+<!doctype html>
+<html lang="zh" manifest="main.manifest">
+<head>
+  <title>Traditional Resume</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="StyleSheet" href="css/reset.css"/>
+  <link type="text/css" rel="StyleSheet" href="css/main.css"/>
+  <style type="text/css">
+    body{
+      background-image:url(images/bg.png);
+    }
+    .item-title{
+      width:100px;
+      padding:4px;
+      line-height: 1.8;
+    }
+    .item-content{
+      padding:4px;
+      line-height: 1.8;
+    }
+    li{
+      padding:7px 0px;
+    }
+    li::before{
+      content:url(./images/icons/yes.png);    
+      padding-right:6px;
+      vertical-align: middle;
+    }
+    .item-wrap{
+      display:-moz-box;
+      display:-webkit-box;
+      display:box;
+      padding:6px 0px;
+      border-bottom:solid 1px #aaa;
+      margin-bottom:6px;
+      width: 100%;
+    }
+    .item-box-left{
+      width: 100px;
+    }
+    .item-box-right{
+       width: 700px;
+    }
+    .item-title-hl{
+      font-size:18px;
+      padding:4px;
+      background-color: #ddd; 
+      border-bottom:solid 2px #ccc;
+    }
+    .project-title{
+      font-size:18px;
+      line-height: 1.8;
+      padding:4px;
+    }
+    .project-sub-title{
+      padding:4px;
+      line-height: 1.8;
+      width:70px;
+    }
+    #goTop{
+      position:fixed;
+      right:100px; 
+      bottom:100px; 
+      background-image:url(images/icons/top.png);
+      width:32px; 
+      height:32px; 
+      -webkit-box-reflect: below 0px -webkit-gradient(linear, center top, center bottom, from(transparent),color-stop(0.2, transparent), to(white));  
+      opacity: 0.5;
+    }
+    .reflect{
+      background-image:url(images/icons/top.png);
+      width:32px; 
+      height:32px; 
+      -webkit-transform: scaleY(-1); 
+      -moz-transform: scaleY(-1); 
+      -ms-transform: scaleY(-1); 
+      transform: scaleY(-1); 
+      filter:alpha(opacity='80'); 
+      opacity: 0.8;
+    }
+    .shadow{
+      position: relative;
+      top:-32px;
+      left:0px;
+      height:32px;
+      width:32px;
+      background-image: -moz-linear-gradient(center bottom, rgb(227,227,227) 30%, rgba(255,255,255,0) 100%); 
+      background-image: -webkit-gradient(linear, center bottom, center top, color-stop(0.3, rgb(227,227,227)), color-stop(0.7, rgba(255,255,255,0))); 
+      filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColor=#e8e8e8, EndColorStr=#ffffff); 
+    }
+  </style>
+  <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body style="margin:0px auto;width:800px;">
+  <header>
+    <h1 style="color:#e8e8e8; font-size: 30px; font-weight:bold;text-align:right;text-shadow: 2px 2px 2px #333, 0px 0px 5px #666; margin-top:15px;">朱江楠</h1>
+    <section style="padding:6px 0px;">
+      <hr/>
+    </section>
+  </header>
+  <article style="padding:10px 0px;">
+    <section>
+      <table style="width:100%">
+        <tr>
+          <td class="item-title">求职意向：</td>
+          <td class="item-content">java开发工程师</td>
+          <td class="item-title">英语水平：</td>
+          <td class="item-content">CET-4</td>
+        </tr>
+
+		 <tr>
+          <td class="item-title">学历：</td>
+          <td class="item-content">全日制本科</td>
+          <td class="item-title">专业：</td>
+          <td class="item-content">信息管理与信息系统</td>
+        </tr>
+
+        <tr>
+          <td class="item-title">手机：</td>
+          <td class="item-content">181-0221-5296</td>
+          <td class="item-title">邮箱：</td>
+          <td class="item-content">
+            <a title="给我发邮件" href="mailto:zjn_2012@foxmail.com">zjn_2012@foxmail.com</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="item-title">资格水平：</td>
+          <td class="item-content">系统架构设计师 （高级）</td>
+          <td class="item-title">毕业院校：</td>
+          <td class="item-content">九江学院</td>
+        </tr>
+        <tr>
+          <td class="item-title">博客:</td>
+          <td class="item-content" colspan="3">
+            <a title="看看我的博客" href="http://my.oschina.net/u/241255/blog" target="_blank">http://my.oschina.net/u/241255/blog</a>
+          </td>
+		 
+        </tr>
+		<tr>
+        
+		  <td class="item-title">GitHub:</td>
+          <td class="item-content" colspan="3">
+            <a title="看看我的GitHub" href="https://github.com/zjnxyz" target="_blank">https://github.com/zjnxyz</a>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section style="margin:4px 0px; height:2px; background-color:#888;"></section>
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">专业技能</span>
+      </section>
+      <section class="item-box-right">
+        <ul>
+          <li>熟练掌握windos环境下的java开发技术，熟悉javaEE技术体系</li>
+          <li>熟练掌握struts2框架，熟悉使用hibernate、Mybatis、spring框架</li>
+          <li>熟练使用jQuery及Ajax开发</li>
+          <li>熟悉java设计模式和数据结构，了解基本算法</li>
+          <li>熟悉使用关系型数据库MySQL、Oracle，以及NoSQL数据库MongoDB</li>
+          <li>熟悉Tomcat、weblogic应用服务器的使用</li>
+          <li>熟悉webservice服务，掌握基于CXF搭建webservice服务</li>
+          <li>熟悉使用SVN和git版本控制工具</li>
+          <li>了解Linux系统的基本使用，能在Linux环境下部署测试系统</li>
+		  <li>了解html5、css3、jquery、coffeScript等前端技术，熟悉node.js、ruby等后端开发技术</li>
+        </ul>
+      </section>
+    </section>
+   
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">工作经历</span>
+      </section>
+      <section class="item-box-right">
+        <table>
+          <tr>
+            <td style="padding:8px 0px; width:150px;">2013.05~今</td>
+            <td style="padding:8px 0px; width:250px;">中科软科技股份有限公司</td>
+            <td>java开发工程师</td>
+          </tr>
+		  <tr>
+		    <td colspan=3>
+			 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 为公司核心系统理赔系统提供技术支持，同时为了提高项目组的工作效率，开发了部署平台和项目需求管理系统，将各种需要手工繁琐的工作移植到系统中，大大提高了工作效率和降低了人为出错的概率。
+			</td>
+		  </tr>
+          <tr>
+            <td>2012.11~2013.04</td>
+            <td>恒拓开源信息科技有限公司</td>
+            <td>java开发工程师（实习）</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">项目经验</span>
+      </section>
+      <section class="item-box-right">
+        <section>
+           <table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+          <tr>
+            <td colspan="2" class="project-title"> 2013年11月 – 2014年2月  &nbsp;&nbsp; 众诚保险微信公众平台开发 </td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目描述:</td>
+            <td class="item-content" > 该系统是为众诚保险公司基于微信公众平台开发的服务系统，主要包括保费试算子系统、续保试算、承保查询，自助验车、理赔查询、自助查勘、常见问题，在线客服功能。</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">使用技术:</td>
+            <td class="item-content">struts2、hibernate、spring、基于CXF的webservice、Jquery mobile</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目收获:</td>
+            <td class="item-content">
+              负责整个项目的功能开发，为了适应移动平台的访问，所以的页面都采用基于Jquery mobile框架设计；为了方便使用微信公众平台的接口，采用java对接口进行了二次封装。项目中多处使用webservice与其他核心系统进行数据交互；为了使代码更加的优雅和具有更好的可扩展性，分别是使用责任链模式和状态模式解决文本处理和图片上传流程中大量不优雅的if ~else代码，同时使用工厂模式、单例模式、策略模式解决其他问题。
+            </td>
+          </tr>
+        </table>
+        <table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+          <tr>
+            <td colspan="2" class="project-title">2013年7月 – 2013年10月 &nbsp;&nbsp; 中科软项目管理系统</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目描述:</td>
+            <td class="item-content">
+             该项目是为了简化项目管理流程而设计的，将原来使用人工和excel操作的流程移植到系统中，最大化的避免人工失误带来的错误，提高工作效率。
+            </td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">使用技术:</td>
+            <td class="item-content">sturts2、hibernate、spring、bootstrap、poi</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目收获:</td>
+            <td class="item-content">
+             为项目开发了权限模块、需求模块和版本管理模块。在项目开发的过程中熟悉权限的基本概念；使用poi实现了满足多种需求的excel的导入和导出功能；并且设计出一种准确计算需求实现的算法。
+            </td>
+          </tr>
+        </table>
+        <table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+          <tr>
+            <td colspan="2" class="project-title">2013年5月 – 2013年7月  &nbsp;&nbsp;    中科软部署平台</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目描述:</td>
+            <td class="item-content">
+             该系统是用来更新公司Linux测试环境和生成环境上部署的各个系统的，可以在同一的web页面上对各个环境上的系统做 停止系统、备份系统、复制更新文件、修改文件权限、启动系统、查看系统进程、强制停止系统和查看启动日志 的操作。
+            </td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">使用技术:</td>
+            <td class="item-content">servlet、jsp、Jquery、shell脚本</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目收获:</td>
+            <td class="item-content">
+             由于项目比较小，所以没有使用一大堆框架。在项目中我熟悉和了解Linux的基本操作和解决servlet的线程不安全带来的并发问题。
+            </td>
+          </tr>
+        </table>
+        <table style="margin-bottom:10px; border-bottom:dashed 1px #ccc;">
+          <tr>
+            <td colspan="2" class="project-title">2012年4月 – 2012年9月  &nbsp;&nbsp;    九江学院知识共享平台</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目描述:</td>
+            <td class="item-content">该项目是江西省教育科学“十二五”规划2011年资助项目“应用知识管理，推进作业数字化改革的研究”研究项目资源，探索个性化推荐在知识管理方面的应用。</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">使用技术:</td>
+            <td class="item-content">struts2、spring、hibernate、mahout、lucene、jqueryUI</td>
+          </tr>
+          <tr>
+            <td class="project-sub-title" valign="top">项目收获:</td>
+            <td class="item-content">
+              研究基于Mahout框架的个性化推荐技术，并将其运用到知识共享平台中，同时为了提高个性化推荐的准确率和效率，对mahout的推荐算法流程给出了一个改进的流程。
+            </td>
+          </tr>
+        </table>
+        </section>
+      </section>
+    </section>
+	
+
+	<section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">证书/奖励</span>
+      </section>
+      <section class="item-box-right" style="margin-bottom:10px;">
+        <ul>
+          <li>
+		  2010年—2012年分别通过全国计算机技术与软件专业资格（水平）考试的系统架构设计师（高级）、软件设计师（中级）、数据库系统工程师（中级）
+		  </li>
+          <li>2013年6月 撰写的《基于Mahout的个性化推荐在作业管理系统上的设计与实现》获得校级优秀毕业论文称号</li>
+          <li>2010年—2013年分别获得一次国家励志奖学金，两次校级二等奖学金，三次校级三等奖学金</li>
+		  <li>
+		  2013年5月 撰写的论文《基于协同过滤推荐技术的作业资源个性化推荐系统设计与研究》 发表在《电子世界》杂志上，用稿编号rj-dz-2013-05-035
+		  </li>
+		  <li>通过全国大学生英语等级考试CET-4</li>
+        </ul>
+      </section>
+    </section>
+	<section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">教育经历</span>
+      </section>
+      <section class="item-box-right" style="margin-bottom:10px;">
+        <table>
+          <tr>
+            <td style="width:150px;">2009.09~2013.06</td>
+            <td style="width:250px;">九江学院</td>
+            <td>信息管理与信息系统专业</td>
+          </tr>
+        </table>
+      </section>
+    </section>
+
+    <section class="item-wrap">
+      <section class="item-box-left">
+        <span class="item-title-hl">自我评价</span>
+      </section>
+      <section class="item-box-right" style="margin-bottom:10px;">
+        <ul>
+          <li>性格乐观开朗，感染力强，能够带动团队氛围</li>
+          <li>对技术感兴趣，广泛关注行业知识、动向，喜欢钻研技术原理</li>
+          <li>表达能力强，热衷于技术分享</li>
+		  <li>工作努力认真负责，每天都提前半小时到达公司</li>
+        </ul>
+      </section>
+    </section>
+    <aside id="wrap" style="position:fixed; bottom:100px; right:100px;display:none; opacity:0.5;">
+      <section style="background-image:url(images/icons/top.png); width:32px;height:32px;"></section>
+      <section class="reflect"></section>
+      <section class="shadow"></section>
+    </aside>
+  </article>
+
+  <script type="text/javascript">
+    $(function(){
+      $('#wrap').on('click', function(event) {
+        var obj=document.body.scrollTop>0? document.body:document.documentElement;
+        $(obj).animate({"scrollTop":0}, 1000);
+        $(this).animate({"opacity":0.5}, 1000);
+      }).on('mouseover', function(event) {
+        $(this).css('opacity',1);
+      }).on('mouseout',function(event) {
+        $(this).css('opacity',0.5);
+      });
+    });
+    $(document).scroll(function(event) {
+      var goTop=$('#wrap');
+      var scrollTop=document.body.scrollTop || document.documentElement.scrollTop || 0;
+      if(scrollTop>0){
+        if(goTop.css('display')=='none'){
+          $('#wrap').fadeIn(500);
+        } 
+      }else{
+        if(goTop.css('display')!='none'){
+          $('#wrap').fadeOut(500);
+        }
+      }
+    });
+
+    applicationCache.onupdateready=function(e) {
+      window.applicationCache.swapCache();
+      if (confirm('页面已更新，是否加载新内容?')) {
+        window.location.reload();
+      }
+    };
+  </script>
+</body>
+</html>
