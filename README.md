@@ -63,17 +63,24 @@
  - [super-auto-code](https://github.com/zjnxyz/super-redis-common):代码生成工具，采用yam配置形式，可生成model，dao，service的模板方法，支持redis、读写分离等配置。
 
 # 技能清单
-（我一般主张将技能清单写入到工作经历里边去。不过很难完整，所以有这么一段也不错）
+
 
 以下均为我熟练使用的技能
 
 - Web开发：java/scala/ruby
-- Web框架：Spring相关框架（Spring-boot，Spring-data,spring-security等）
+- Web框架：Spring-Boot/Spring-Data/Spring-Security
 - 数据库相关：MySQL/Redis/MongoDB
 - 版本管理、文档和自动化部署工具：Svn/Git
 - 单元测试：Junit
 
 # 2015年读书清单
+- 大型网站系统与java中间件实践
+- 大型分布式网站架构与实践
+- 深入分析Java Web 技术内幕
+- Spring技术内幕
+- 架构探险：从零开始写Java Web框架
+- Java性能优化权威指南
+- Ruby元编程
 
 # 证书与奖励
 - 2010年—2012年分别通过全国计算机技术与软件专业资格（水平）考试的系统架构设计师（高级）、软件设计师（中级）、数据库系统工程师（中级）
@@ -82,7 +89,8 @@
 - 2013年5月 撰写的论文《基于协同过滤推荐技术的作业资源个性化推荐系统设计与研究》 发表在《电子世界》杂志上，用稿编号rj-dz-2013-05-035
 
 # 教育经历
-2009年9月 – 2013年6月    九江学院    信息管理与信息系统专业
+
+ 2009年9月 – 2013年6月    九江学院    信息管理与信息系统专业
 ---
 
 # 致谢
